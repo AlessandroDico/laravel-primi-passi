@@ -2,3 +2,16 @@ body {
   background: cadetblue;
 }
 
+a {
+  text-decoration: none;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.home-links {
+  display: block;
+  margin: 10px;
+}
+

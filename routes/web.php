@@ -20,6 +20,34 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = [
         'nome' => 'Pippo',
+        'pagesLinks' => [
+            'Contatti' => 'contatti',
+            'Chi siamo' => 'chiSiamo',
+            'Lavora con noi' => 'lavoraConNoi',
+        ]
     ];
     return view('home', $data);
 });
+
+Route::get('/contatti', function () {
+    $data = [
+        'contatti' => [
+            'numero' => 123,
+            'mail' => 'pippo@gmail.com',
+        ],
+        'social' => [
+            'facebook',
+            'twitter',
+        ],
+    ];
+    return view('contatti', $data);
+});
+
+Route::get('/chiSiamo', function () {
+    return view('chiSiamo');
+});
+
+Route::get('/lavoraConNoi', function () {
+
+    return view('lavoraConNoi');
+})->name('work');

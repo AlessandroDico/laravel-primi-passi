@@ -6,7 +6,12 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
     <body>
-        <h1>home page</h1>
+        <h1 class="text-uppercase">home page</h1>
         <h2>Ciao {{$nome}}</h2>
+        <ul>
+            @foreach($pagesLinks as $key => $link)
+            <a class="home-links" href="{{ url('/'.$link) }}"> {{$key}} </a>
+            @endforeach
+        </ul>
     </body>
 </html>
