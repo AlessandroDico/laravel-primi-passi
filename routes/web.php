@@ -58,3 +58,12 @@ Route::get('/lavoraConNoi', function () {
     ];
     return view('lavoraConNoi', $data);
 });
+
+Route::get('/nameLink', function () {
+    $data = [
+        'name' => [
+            'link tramite nome',
+            ]
+    ];
+    return view('nameLink', $data);
+})->name('link');

@@ -10,8 +10,13 @@
         <h2>Ciao {{$nome}}</h2>
         <ul>
             @foreach($pagesLinks as $key => $link)
-            <a class="home-links" href="{{ url('/'.$link) }}"> {{$key}} </a>
+            <li>
+                <a class="home-links" href="{{ url('/'.$link) }}"> {{$key}} </a>
+            </li>
             @endforeach
+            <li>
+                <a class="home-links" href="{{route('link')}}">link tramite nome</a>
+            </li>
         </ul>
     </body>
 </html>
