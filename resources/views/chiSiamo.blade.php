@@ -7,6 +7,9 @@
     </head>
     <body>
         <h1 class="text-uppercase">chi siamo</h1>
-
+        <h2>La nostra storia :</h2>
+        @foreach($history as $story)
+            <p>{{$story}}</p>
+        @endforeach
     </body>
 </html>

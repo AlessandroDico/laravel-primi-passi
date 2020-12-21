@@ -7,6 +7,8 @@
     </head>
     <body>
         <h1 class="text-uppercase">contatti</h1>
-
+        @foreach($contatti as $key => $contatto)
+            <p>{{$key}} : {{$contatto}}</p>
+        @endforeach
     </body>
 </html>
