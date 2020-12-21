@@ -7,6 +7,7 @@
     </head>
     <body>
         <h1 class="text-uppercase">chi siamo</h1>
+        <a href="{{url('/')}}" class="back-home text-uppercase">Torna alla home</a>
         <h2>La nostra storia :</h2>
         @foreach($history as $story)
             <p>{{$story}}</p>

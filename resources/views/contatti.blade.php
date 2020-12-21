@@ -7,6 +7,7 @@
     </head>
     <body>
         <h1 class="text-uppercase">contatti</h1>
+        <a href="{{url('/')}}" class="back-home text-uppercase">Torna alla home</a>
         @foreach($contatti as $key => $contatto)
             <p>{{$key}} : {{$contatto}}</p>
         @endforeach

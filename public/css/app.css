@@ -1,13 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: cadetblue;
+  position: relative;
 }
 
 a {
   text-decoration: none;
 }
 
+h1,
+h2,
+p {
+  margin: 20px;
+}
+
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.back-home {
+  position: absolute;
+  top: 20px;
+  right: 50px;
 }
 
 .home-links {

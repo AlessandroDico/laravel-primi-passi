@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1 class="text-uppercase">Lavora con noi</h1>
-
+        <a href="{{url('/')}}" class="back-home text-uppercase">Torna alla home</a>
 
         @forelse($posizioniAperte as $lavoro)
             <p>Candidati come : <a href="#">{{$lavoro}}</a> </p>
