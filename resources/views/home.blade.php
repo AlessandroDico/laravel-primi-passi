@@ -7,5 +7,6 @@
     </head>
     <body>
         <h1>home page</h1>
+        <h2>Ciao {{$nome}}</h2>
     </body>
 </html>
